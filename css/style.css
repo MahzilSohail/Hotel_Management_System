@@ -1,0 +1,111 @@
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.query-btn {
+    transition: all 0.3s ease;
+}
+
+.query-btn:hover {
+    transform: scale(1.02);
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    background-color: rgba(33, 37, 41, 0.8);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#resultsContainer {
+    max-height: 500px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+#resultsContainer::-webkit-scrollbar {
+    width: 8px;
+}
+
+#resultsContainer::-webkit-scrollbar-track {
+    background: #2a2e32;
+}
+
+#resultsContainer::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+#loadingIndicator {
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-group-item {
+    transition: all 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: rgba(13, 110, 253, 0.1);
+    border-left: 4px solid #0d6efd;
+}
+
+.card-header {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.badge {
+    transition: all 0.5s ease;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .col-md-3, .col-md-9 {
+        width: 100%;
+    }
+    
+    #resultsContainer {
+        max-height: 400px;
+    }
+}
+
+.date-field {
+    color: #20c997;
+}
+
+.numeric-field {
+    font-weight: bold;
+}
+
+#errorAlert {
+    border-left: 4px solid #dc3545;
+}
+
+#customQuery {
+    font-family: monospace;
+    resize: vertical;
+}
